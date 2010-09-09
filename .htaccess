@@ -1,0 +1,3 @@
+php_value error_reporting -1
+
+Options +MultiViews

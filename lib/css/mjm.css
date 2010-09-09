@@ -1,0 +1,211 @@
+/* -------------------------------------------------------------- 
+
+   Mark J. Maloney Professional Website v2
+   Default Styles for Screen Media
+   
+-------------------------------------------------------------- */
+
+/* Resets
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { 
+	margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; 
+}
+body { line-height: 1; color: black; background: white; }
+ol, ul { list-style: none; }
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+a img,:link img,:visited img { border:none }
+:link,:visited { text-decoration:none }
+section, article, header, footer, nav, aside, hgroup { display: block ; }
+
+/* Global
+-------------------------------------------------------------- */
+
+html { background: #1D1D1C; }
+body { background: #1D1D1C url(../images/bg.png) top center no-repeat; text-align: center; color: #FFF; margin: 0 auto; width: 100%; font: 16px/28px "ff-dagny-web-pro-1","ff-dagny-web-pro-2", Helvetica, Geneva, Arial, sans-serif; }
+
+a, a:visited { color: #0E9FCC; text-decoration: none; }
+a:hover { color: #5D5A4D; }
+ 
+p { margin: 0 0 1.5em 0; }
+strong { font-weight: 600; }
+em { font-style: italic; }
+
+@font-face { font-family: 'RalewayThin'; src: url('../type/raleway_thin-webfont.eot'); src: local('☺'), url('../type/raleway_thin-webfont.woff') format('woff'), url('../type/raleway_thin-webfont.ttf') format('truetype'), url('../type/raleway_thin-webfont.svg#webfontLpHyZSfn') format('svg'); font-weight: normal; font-style: normal; }
+
+h1, h2, h3, h4 { font-family: "RalewayThin", Arial, sans-serif; font-weight: 100; }
+
+h1 { font-size: 70px; letter-spacing: -2px; line-height: 75px; text-align: left; clear: left; padding: 30px 20px 25px 20px; color: #FFF; }
+h2 { font-size: 35px; letter-spacing: -2px; line-height: 36px; text-align: left; clear: left; padding: 0 40px 0 20px; color: #BCB395; }
+h3 { font-size: 25px; letter-spacing: -2px; line-height: 30px; padding: 0; color: #BCB395; padding: 5px 0 15px 0; }
+
+h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidden; text-decoration: none; }
+
+
+/* Masthead
+-------------------------------------------------------------- */
+
+#gnav { 
+	background: url(../images/nav_bg.png) top center no-repeat; 
+	width: 960px; 
+	height: 36px; 
+	font: 11px/11px "ff-dagny-web-pro-1","ff-dagny-web-pro-2", Helvetica, Geneva, Arial, sans-serif; 
+	text-transform: uppercase; 
+}
+#gnav p {
+	float: left; 
+	padding: 12px 0 0 80px; 
+}
+#gnav ul { 
+	float: right; 
+	padding: 12px 20px 0 0; 
+}
+#gnav ul li { 
+	display: inline; 
+	margin: 0 25px 0 0; 
+}
+#gnav ul li.last { 
+	margin: 0; 
+}
+#gnav ul li a { 
+	color: #BCB395; 
+}
+#gnav ul li a:hover, #gnav ul li.selected a { 
+	color: #FFF; 
+}
+#gnav ul li.selected a {
+	cursor: text;
+}
+
+
+/* Content
+-------------------------------------------------------------- */
+
+#container { 
+	width: 960px; 
+	min-height: 153px; 
+	margin: 0 auto; 
+	text-align: left;
+}
+#screenshots { 
+	background: url(../images/ipad_bg.png) no-repeat; 
+	height: 664px;
+	padding: 83px 95px;
+}
+#screenshots img { 
+	display: block;
+	float: left;
+}
+#paneWrapper {
+	cursor: col-resize;
+	overflow: hidden;
+}
+#pane {
+	width: 9999px;
+}
+
+#home #content { 
+	background: url(../images/about_bg.png) no-repeat;
+}
+#home h2 { 
+	font-size: 48px; 
+	letter-spacing: -2px; 
+	line-height: 52px; 
+	text-align: left; 
+	color: #FFF; 
+}
+#home #content h2 { 
+	padding: 40px 0 15px 20px;
+}
+#home #content img { 
+	border: 5px solid #5D5A4D; 
+	float: left; 
+	margin: 2px 10px 0 0;
+}
+#home #linkedin { color: #9D967E; width: 460px; padding: 0 60px 20px 20px; float: left; }
+#home #linkedin p { font-size: 15px; line-height: 25px; } 
+#home #linkedin a { font-size: 11px; color: #0E9FCC; width: 340px; text-transform: uppercase;  border-top: 1px solid #252522; border-bottom: 1px solid #252522; display: inline-block; background: url(../images/icon_linkedin.gif) left no-repeat; padding: 0 0 0 20px; margin: 0 0 9px 0; }
+#home #linkedin a:hover { color: #5D5A4D; }
+
+#home #twitter { width: 180px; padding: 0 50px 20px 0; float: left; }
+#home #twitter h3 { height: 16px; background: url(../images/logo_twitter.png) no-repeat; padding: 7px 0 0 0; margin: 0; }
+#home #twitter p { font-size: 14px; line-height: 20px; border-top: 1px solid #252522; padding: 15px 0 0 0; } 
+#home #twitter p span { font-size: 12px; line-height: 15px; display: block; margin: 7px 0 20px 0; }
+
+#home #facebook { width: 180px; padding: 0; margin: 0; float: left; }
+#home #facebook h3 { height: 15px; background: url(../images/logo_facebook.png) no-repeat; padding: 8px 0 0 0; margin: 0; }
+#home #facebook p { font-size: 14px; line-height: 20px; border-top: 1px solid #252522; padding: 15px 0 0 0; } 
+#home #facebook p span { font-size: 12px; line-height: 15px; display: block; margin: 8px 0 8px 0; }
+#home #facebook p a { display: block; font-size: 12px; line-height: 15px; margin: 6px 0 0 0; }
+#home #facebook p a img { border: none; margin: 4px 7px 7px 0; }
+#home #facebook ul li { font-size: 12px; line-height: 16px; display: block; background-color: #2A2926; margin: 0 0 2px 0; clear: left; min-height: 20px; padding: 4px; }
+#home #facebook ul li img { border: none; margin: -2px 5px 0 -2px; }
+
+#home #lastfm { width: 180px; padding: 0; padding: 30px 0 0 0; float: left; }
+#home #lastfm h3 { height: 15px; background: url(../images/logo_lastfm.png) no-repeat; padding: 8px 0 0 0; margin: 0; }
+#home #lastfm p { font-size: 13px; line-height: 18px; border-top: 1px solid #252522; padding: 7px 0 7px 0; margin: 0; min-height: 46px; }
+#home #lastfm p img { border: none; padding: 0 0 7px 0; }
+#home #lastfm p span { font-size: 12px; line-height: 15px; } 
+#home #lastfm p a { display: block; font-size: 14px; line-height: 18px; margin: 6px 0 0 0; }
+
+
+#skills h2, #experience h2, #education h2, #recognition h2, #press h2 { width: 220px; float: left; display: inline-block; clear: left; }
+#skills ul, #experience div, #education div, #recognition div, #press div { width: 660px; padding: 0 20px 50px 0; float: left; }
+#skills ul li, #experience ul li, #education ul li, #recognition ul li, #press ul li { margin: 0 0 0.5em 0; }
+
+#experience h3, #education h3, #recognition h3, #press h3 { font-size: 35px; letter-spacing: -1.75px; line-height: 36px; padding: 0; color: #BCB395; }
+#experience h3 a, #education h3 a, #recognition h3 a, #press h3 a { color: #0E9FCC; }
+#experience h3 a:hover, #education h3 a:hover, #recognition h3 a:hover, #press h3 a:hover { color: #5D5A4D; }
+#experience h4, #education h4, #recognition h4, #press h4 { font-size: 28px; letter-spacing: -1.5px; line-height: 30px; padding: 0 0 20px 0; color: #5D5A4D; }
+#experience h5, #education h5, #recognition h5, #press h5 { color: #5D5A4D; text-transform: uppercase; }
+#experience p, #education p, #recognition p, #press p { margin: 0 0 40px 0; }
+#experience ul, #education ul { margin: 10px 0 30px 0; }
+#recognition ul { margin: 10px 0 40px 0; }
+#press ul { margin: 30px 0 40px 0; }
+#recognition ul + h4 { margin: -20px 0 -10px 0; }
+#experience ul li, #education ul li, #recognition ul li, #press ul li { padding: 0 0 0 40px; background: url(../images/bullet.gif) 20px 6px no-repeat; }
+
+body.bio h2 { font-size: 48px; letter-spacing: -2px; line-height: 52px; text-align: left; color: #5D5A4D; padding: 0; }
+body.bio h3 { font-size: 35px; letter-spacing: -1.75px; line-height: 36px; padding: 0; color: #BCB395; padding: 5px 0 15px 0; }
+#dmb, #trophic, #gr8, #noinc, #gre, #present { padding: 0 350px 20px 20px; }
+#dmb { background: url(../images/bg_dmb.png) 100px right no-repeat; overflow: visible; }
+#trophic { background: url(../images/bg_trophic.png) 100px right no-repeat; overflow: visible; }
+#gr8 { background: url(../images/bg_gr8.png) 100px right no-repeat; overflow: visible; }
+#noinc { background: url(../images/bg_noinc.png) 100px right no-repeat; overflow: visible; }
+#gre { background: url(../images/bg_gre.png) 50px right no-repeat; overflow: visible; }
+#present { background: url(../images/bg_present.png) 100px right no-repeat; overflow: visible; }
+
+div.project { padding: 0 0 0 20px; clear: left; }
+div.project h2 { display: block; padding: 0; }
+div.project h3 { display: block; padding: 0; }
+div.screenshot { float: left; width: 640px; padding: 25px 0 60px 0; }
+div.details { float: left; margin: 0 0 60px 25px; width: 250px; }
+
+div.details dl { border-bottom: 1px solid #2D2C28; margin: -17px 0 0 0; padding: 30px 0 15px 0; }
+div.details dl dt { color: #FFFFFF; font-size: 10px; margin: 10px 0 0 0; text-transform: uppercase; }
+div.details dl dd { color: #0E9FCC; font-size: 14px; line-height: 20px; }
+div.details dl dd span { color: #5D5A4D; font: 11px; }
+
+div.details dl + dl { border-bottom: 1px solid #2D2C28; margin: 17px 0 0 0; padding: 0 0 15px 0; }
+div.details dl + dl dt { color: #CCC2A2; font-size: 10px; text-transform: uppercase; margin: 10px 0 1px 0; }
+div.details dl + dl dd { color: #FFFFFF; font-size: 14px; line-height: 20px; }
+
+/* Cross-browser fixes
+-------------------------------------------------------------- */
+
+#home.ie6 h1 { 
+	height: 83px; 
+	background: url(../images/h1_homepage.gif) no-repeat; 
+	padding: 0; 
+	margin: 0; 
+}

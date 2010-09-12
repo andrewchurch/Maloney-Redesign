@@ -1,5 +1,6 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/lib/includes/config.inc.php' ?>	
 <!DOCTYPE html>
+<html>
 <head>
 	<?php include $_SERVER['DOCUMENT_ROOT'] . '/lib/includes/head.inc.php' ?>	
 	<title>Mark Maloney</title>

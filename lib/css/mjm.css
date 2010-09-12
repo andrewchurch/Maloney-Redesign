@@ -31,24 +31,72 @@ section, article, header, footer, nav, aside, hgroup { display: block ; }
 /* Global
 -------------------------------------------------------------- */
 
-html { background: #1D1D1C; }
-body { background: #1D1D1C url(../images/bg.png) top center no-repeat; text-align: center; color: #FFF; margin: 0 auto; width: 100%; font: 16px/28px "ff-dagny-web-pro-1","ff-dagny-web-pro-2", Helvetica, Geneva, Arial, sans-serif; }
-
-a, a:visited { color: #0E9FCC; text-decoration: none; }
-a:hover { color: #5D5A4D; }
- 
-p { margin: 0 0 1.5em 0; }
-strong { font-weight: 600; }
-em { font-style: italic; }
-
-@font-face { font-family: 'RalewayThin'; src: url('../type/raleway_thin-webfont.eot'); src: local('☺'), url('../type/raleway_thin-webfont.woff') format('woff'), url('../type/raleway_thin-webfont.ttf') format('truetype'), url('../type/raleway_thin-webfont.svg#webfontLpHyZSfn') format('svg'); font-weight: normal; font-style: normal; }
-
-h1, h2, h3, h4 { font-family: "RalewayThin", Arial, sans-serif; font-weight: 100; }
-
-h1 { font-size: 70px; letter-spacing: -2px; line-height: 75px; text-align: left; clear: left; padding: 30px 20px 25px 20px; color: #FFF; }
-h2 { font-size: 35px; letter-spacing: -2px; line-height: 36px; text-align: left; clear: left; padding: 0 40px 0 20px; color: #BCB395; }
-h3 { font-size: 25px; letter-spacing: -2px; line-height: 30px; padding: 0; color: #BCB395; padding: 5px 0 15px 0; }
-
+@font-face { 
+	font-family: 'RalewayThin'; 
+	src: url('../type/raleway_thin-webfont.eot'); 
+	src: local('☺'), url('../type/raleway_thin-webfont.woff') format('woff'), url('../type/raleway_thin-webfont.ttf') format('truetype'), url('../type/raleway_thin-webfont.svg#webfontLpHyZSfn') format('svg'); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+html { 
+	background: #1D1D1C;
+	height: 100%;
+}
+body { 
+	background: #1D1D1C url(../images/bg.png) top center no-repeat; 
+	text-align: center; 
+	color: #FFF; 
+	margin: 0 auto; 
+	min-height: 100%;
+	width: 100%; 
+	font: 16px/28px "ff-dagny-web-pro-1","ff-dagny-web-pro-2", Helvetica, Geneva, Arial, sans-serif; 
+}
+a, a:visited { 
+	color: #0E9FCC; 
+	text-decoration: none; 
+}
+a:hover { 
+	color: #5D5A4D; 
+}
+p {
+	 margin: 0 0 1.5em 0; 
+}
+strong { 
+	font-weight: 600; 
+}
+em { 
+	font-style: italic; 
+}
+h1, h2, h3, h4 { 
+	font-family: "RalewayThin", Arial, sans-serif; 
+	font-weight: 100; 
+}
+h1 { 
+	font-size: 70px; 
+	letter-spacing: -2px; 
+	line-height: 75px; 
+	text-align: left; 
+	clear: left; 
+	padding: 30px 20px 25px 20px; 
+	color: #FFF; 
+}
+h2 { 
+	font-size: 35px; 
+	letter-spacing: -2px; 
+	line-height: 36px; 
+	text-align: left; 
+	clear: left; 
+	padding: 0 40px 0 20px; 
+	color: #BCB395; 
+}
+h3 { 
+	font-size: 25px; 
+	letter-spacing: -2px; 
+	line-height: 30px; 
+	padding: 0; 
+	color: #BCB395; 
+	padding: 5px 0 15px 0; 
+}
 h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidden; text-decoration: none; }
 
 
@@ -93,7 +141,6 @@ h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidde
 
 #container { 
 	width: 960px; 
-	min-height: 153px; 
 	margin: 0 auto; 
 	text-align: left;
 }
@@ -208,15 +255,15 @@ h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidde
 #recognition ul + h4 { margin: -20px 0 -10px 0; }
 #experience ul li, #education ul li, #recognition ul li, #press ul li { padding: 0 0 0 40px; background: url(../images/bullet.gif) 20px 6px no-repeat; }
 
-body.bio h2 { font-size: 48px; letter-spacing: -2px; line-height: 52px; text-align: left; color: #5D5A4D; padding: 0; }
-body.bio h3 { font-size: 35px; letter-spacing: -1.75px; line-height: 36px; padding: 0; color: #BCB395; padding: 5px 0 15px 0; }
+#bio h2 { font-size: 48px; letter-spacing: -2px; line-height: 52px; text-align: left; color: #5D5A4D; padding: 0; }
+#bio h3 { font-size: 35px; letter-spacing: -1.75px; line-height: 36px; padding: 0; color: #BCB395; padding: 5px 0 15px 0; }
 #dmb, #trophic, #gr8, #noinc, #gre, #present { padding: 0 350px 20px 20px; }
-#dmb { background: url(../images/bg_dmb.png) 100px right no-repeat; overflow: visible; }
-#trophic { background: url(../images/bg_trophic.png) 100px right no-repeat; overflow: visible; }
-#gr8 { background: url(../images/bg_gr8.png) 100px right no-repeat; overflow: visible; }
-#noinc { background: url(../images/bg_noinc.png) 100px right no-repeat; overflow: visible; }
-#gre { background: url(../images/bg_gre.png) 50px right no-repeat; overflow: visible; }
-#present { background: url(../images/bg_present.png) 100px right no-repeat; overflow: visible; }
+#dmb { background: url(../images/bg_dmb.png) no-repeat 100% 100px; overflow: visible; }
+#trophic { background: url(../images/bg_trophic.png) no-repeat 100% 100px; overflow: visible; }
+#gr8 { background: url(../images/bg_gr8.png) no-repeat 100% 100px; overflow: visible; }
+#noinc { background: url(../images/bg_noinc.png) no-repeat 100% 100px; overflow: visible; }
+#gre { background: url(../images/bg_gre.png) no-repeat 100% 50px; overflow: visible; }
+#present { background: url(../images/bg_present.png) no-repeat 100% 100px; overflow: visible; }
 
 div.project { padding: 0 0 0 20px; clear: left; }
 div.project h2 { display: block; padding: 0; }

@@ -225,15 +225,41 @@ h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidde
 #home #facebook { 
 	margin-bottom: 30px;
 }
-#home #facebook h3 { height: 15px; background: url(../images/logo_facebook.png) no-repeat; padding: 8px 0 0 0; margin: 0; }
+#home #facebook h3 { 
+	height: 15px; 
+	background: url(../images/logo_facebook.png) no-repeat; 
+	margin: 0; 
+	overflow: hidden;
+	padding: 8px 0 0 0; 
+	text-indent: -9999px; 
+}
 #home #facebook p { font-size: 14px; line-height: 20px; border-top: 1px solid #252522; padding: 15px 0 0 0; } 
 #home #facebook p span { font-size: 12px; line-height: 15px; display: block; margin: 8px 0 8px 0; }
 #home #facebook p a { display: block; font-size: 12px; line-height: 15px; margin: 6px 0 0 0; }
 #home #facebook p a img { border: none; margin: 4px 7px 7px 0; }
 #home #facebook ul li { font-size: 12px; line-height: 16px; display: block; background-color: #2A2926; margin: 0 0 2px 0; clear: left; min-height: 20px; padding: 4px; }
 #home #facebook ul li img { border: none; margin: -2px 5px 0 -2px; }
+#home #facebook .meta {
+	color: #5D5A4D;
+	padding-top: 0;
+	position: relative;
+	top: -15px;
+	border-top: 0;
+	font-size: 11px;
+}
+#home #facebook .meta a {
+	display: inline;
+	font-size: 11px;
+}
 
-#home #lastfm h3 { height: 15px; background: url(../images/logo_lastfm.png) no-repeat; padding: 8px 0 0 0; margin: 0; }
+#home #lastfm h3 {
+	height: 15px; 
+	background: url(../images/logo_lastfm.png) no-repeat; 
+	margin: 0; 
+	overflow: hidden;
+	padding: 8px 0 0 0; 
+	text-indent: -9999px; 
+}
 #home #lastfm p { font-size: 13px; line-height: 18px; border-top: 1px solid #252522; padding: 7px 0 7px 0; margin: 0; min-height: 46px; }
 #home #lastfm p img { border: none; padding: 0 0 7px 0; }
 #home #lastfm p span { font-size: 12px; line-height: 15px; } 

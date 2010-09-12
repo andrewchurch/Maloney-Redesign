@@ -38,19 +38,9 @@
 			<div id="socialMedia">
 
 				<div class="block">
-
-					<div id="facebook"> 
-						<h3><span>Facebook</span></h3> 
-						<p>Mid-century corporate design. Tight. <a href="http://is.gd/diHiP" target="_blank"><img src="assets/images/fpo_facebook_thumb.jpg" width="45" height="36" alt="Facebook Thumb">Mid-Century Corporate Design – Part 1 | Aqua-Velvet</a> <span>about 8 hrs ago</span></p> 
-						<ul> 
-						<li><img src="assets/images/fpo_avatar.jpg" width="24" height="24" alt="Facebook Avatar">Fabulous</li> 
-						<li><img src="assets/images/fpo_avatar.jpg" width="24" height="24" alt="Facebook Avatar">Great find.  The IBM stuff is solid.</li> 
-						<li><img src="assets/images/fpo_avatar.jpg" width="24" height="24" alt="Facebook Avatar">Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li> 
-						</ul> 
-					</div> 
 					
 					<div id="lastfm"> 
-						<h3><span>Last.FM</span></h3> 
+						<h3>Last.FM</h3> 
 						<p><a href="http://www.last.fm" target="_blank"><img src="assets/images/fpo_lastfm_thumb.jpg" width="34" height="34" alt="Last.FM Thumb">Bonobo - Kong</a> <span>about 15 min ago</span></p> 
 						<p><a href="http://www.last.fm" target="_blank"><img src="assets/images/fpo_lastfm_thumb.jpg" width="34" height="34" alt="Last.FM Thumb">Altern 8 – Altern8 @The Clarence Sligo 18-4-2009</a> <span>Yesterday 2:10pm</span></p> 
 						<p><a href="http://www.last.fm" target="_blank"><img src="assets/images/fpo_lastfm_thumb.jpg" width="34" height="34" alt="Last.FM Thumb">Murk – Essential Mix - 27-MAR-2005 - Pt.3 - Murk</a> <span>Yesterday 12:18pm</span></p> 

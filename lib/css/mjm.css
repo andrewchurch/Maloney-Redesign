@@ -141,12 +141,43 @@ h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidde
 #home #linkedin a { font-size: 11px; color: #0E9FCC; width: 340px; text-transform: uppercase;  border-top: 1px solid #252522; border-bottom: 1px solid #252522; display: inline-block; background: url(../images/icon_linkedin.gif) left no-repeat; padding: 0 0 0 20px; margin: 0 0 9px 0; }
 #home #linkedin a:hover { color: #5D5A4D; }
 
-#home #twitter { width: 180px; padding: 0 50px 20px 0; float: left; }
-#home #twitter h3 { height: 16px; background: url(../images/logo_twitter.png) no-repeat; padding: 7px 0 0 0; margin: 0; }
-#home #twitter p { font-size: 14px; line-height: 20px; border-top: 1px solid #252522; padding: 15px 0 0 0; } 
-#home #twitter p span { font-size: 12px; line-height: 15px; display: block; margin: 7px 0 20px 0; }
+#home #socialMedia {
+	overflow: hidden;
+	zoom: 1;
+}
+#home #twitter { 
+	width: 180px; 
+	margin: 0 50px 20px 0;
+	float: left; 
+}
+#home #twitter h3 { 
+	height: 16px; 
+	background: url(../images/logo_twitter.png) no-repeat; 
+	margin: 0; 
+	overflow: hidden;
+	padding: 7px 0 0 0; 
+	text-indent: -9999px; 
+}
+#home #twitter p { 
+	font-size: 14px; 
+	line-height: 20px; 
+	border-top: 1px solid #252522; 
+	padding: 15px 0 0 0;
+} 
+#home #twitter p span { 
+	font-size: 12px; 
+	line-height: 15px; 
+	display: block; 
+	margin: 7px 0 20px 0; 
+}
 
-#home #facebook { width: 180px; padding: 0; margin: 0; float: left; }
+#home #socialMedia .block {
+	float: left;
+	width: 180px;
+}
+#home #facebook { 
+	margin-bottom: 30px;
+}
 #home #facebook h3 { height: 15px; background: url(../images/logo_facebook.png) no-repeat; padding: 8px 0 0 0; margin: 0; }
 #home #facebook p { font-size: 14px; line-height: 20px; border-top: 1px solid #252522; padding: 15px 0 0 0; } 
 #home #facebook p span { font-size: 12px; line-height: 15px; display: block; margin: 8px 0 8px 0; }
@@ -155,7 +186,6 @@ h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidde
 #home #facebook ul li { font-size: 12px; line-height: 16px; display: block; background-color: #2A2926; margin: 0 0 2px 0; clear: left; min-height: 20px; padding: 4px; }
 #home #facebook ul li img { border: none; margin: -2px 5px 0 -2px; }
 
-#home #lastfm { width: 180px; padding: 0; padding: 30px 0 0 0; float: left; }
 #home #lastfm h3 { height: 15px; background: url(../images/logo_lastfm.png) no-repeat; padding: 8px 0 0 0; margin: 0; }
 #home #lastfm p { font-size: 13px; line-height: 18px; border-top: 1px solid #252522; padding: 7px 0 7px 0; margin: 0; min-height: 46px; }
 #home #lastfm p img { border: none; padding: 0 0 7px 0; }

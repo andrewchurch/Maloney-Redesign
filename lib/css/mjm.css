@@ -97,10 +97,15 @@ h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidde
 	margin: 0 auto; 
 	text-align: left;
 }
+
+/* Page Specific
+-------------------------------------------------------------- */
+
 #screenshots { 
 	background: url(../images/ipad_bg.png) no-repeat; 
 	height: 664px;
-	padding: 83px 95px;
+	margin: 0;
+	padding: 83px 95px 0 95px;
 }
 #screenshots img { 
 	display: block;
@@ -113,7 +118,6 @@ h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidde
 #pane {
 	width: 9999px;
 }
-
 #home #content { 
 	background: url(../images/about_bg.png) no-repeat;
 }
@@ -157,7 +161,6 @@ h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidde
 #home #lastfm p img { border: none; padding: 0 0 7px 0; }
 #home #lastfm p span { font-size: 12px; line-height: 15px; } 
 #home #lastfm p a { display: block; font-size: 14px; line-height: 18px; margin: 6px 0 0 0; }
-
 
 #skills h2, #experience h2, #education h2, #recognition h2, #press h2 { width: 220px; float: left; display: inline-block; clear: left; }
 #skills ul, #experience div, #education div, #recognition div, #press div { width: 660px; padding: 0 20px 50px 0; float: left; }

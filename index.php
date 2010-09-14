@@ -35,20 +35,7 @@
 				<p>In 2005, I was named to the Baltimore Business Journal's list of &quot;Top 40 Under 40&quot;. I hold an M.S. from the University of Maryland and a B.S. from Roanoke College. I live in Baltimore with my wife Nicole and our sons, Carter and Bennett.</p> 
 			</div> 
 			
-			<div id="socialMedia">
-
-				<div class="block">
-					
-					<div id="lastfm"> 
-						<h3>Last.FM</h3> 
-						<p><a href="http://www.last.fm" target="_blank"><img src="assets/images/fpo_lastfm_thumb.jpg" width="34" height="34" alt="Last.FM Thumb">Bonobo - Kong</a> <span>about 15 min ago</span></p> 
-						<p><a href="http://www.last.fm" target="_blank"><img src="assets/images/fpo_lastfm_thumb.jpg" width="34" height="34" alt="Last.FM Thumb">Altern 8 – Altern8 @The Clarence Sligo 18-4-2009</a> <span>Yesterday 2:10pm</span></p> 
-						<p><a href="http://www.last.fm" target="_blank"><img src="assets/images/fpo_lastfm_thumb.jpg" width="34" height="34" alt="Last.FM Thumb">Murk – Essential Mix - 27-MAR-2005 - Pt.3 - Murk</a> <span>Yesterday 12:18pm</span></p> 
-					</div> 
-				
-				</div>
-				
-			</div>
+			<div id="socialMedia"><!-- Filled via Javascript --><div class="block"></div></div>
 		
 		</div> 
 	 

@@ -1,4 +1,4 @@
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/lib/includes/config.inc.php' ?>	
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/lib/includes/config.inc.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,26 @@
 				<p>In 2005, I was named to the Baltimore Business Journal's list of &quot;Top 40 Under 40&quot;. I hold an M.S. from the University of Maryland and a B.S. from Roanoke College. I live in Baltimore with my wife Nicole and our sons, Carter and Bennett.</p> 
 			</div> 
 			
-			<div id="socialMedia"><!-- Filled via Javascript --><div class="block"></div></div>
+			<div id="socialMedia">
+				<div class="block">
+					<?php
+					// Last.FM
+					try {
+						$tracks = getLastFMTracks(LASTFM_KEY, 'baboonfarmer', 3);
+						if ($tracks) {
+							echo '<div id="lastfm"><h3>Last.FM</h3>';
+							foreach($tracks as $track) {
+								$art = (string) $track->image[1] ? $track->image[1] : '/assets/images/lastfm_default.jpg';
+								$time = $track['nowplaying'] ? 'now' : $track->date;
+								echo '<p><a href="' . $track->url . '" target="_blank"><img src="' . $art . '" alt="Last.FM Art">' . $track->name . ' <em class="artist">' . $track->artist . '</em></a> <span class="time">' . $time . '</span></p>';
+								echo "\n";
+							}
+							echo '</div>';
+						}
+					} catch(Exception $e) { } 
+					?>
+				</div>
+			</div>
 		
 		</div> 
 	 

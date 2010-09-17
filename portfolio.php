@@ -20,8 +20,14 @@
 			
 			<h2>Xenophon Strategies</h2>
 			
-			<div class="screenshot">
-				<img src="/assets/images/slides-portfolio/xs_1.jpg" alt="Xenophon Strategies" width="640" height="513" />
+			<div class="slides">
+				<?php 
+				$directory = '/assets/images/slides-portfolio/';
+				$imgs = getFiles($directory, 'xs');
+				foreach($imgs as $i=>$img): 
+					$class = $i == 0 ? ' class="on"' : '';
+					echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+				endforeach; ?>
 			</div>
 			
 			<div class="details">
@@ -48,8 +54,14 @@
 			
 			<h2>Forum for Education and Democracy: Nation of Thinkers</h2>
 			
-			<div class="screenshot">
-				<img src="/assets/images/slides-portfolio/fed_1.jpg" alt="Forum for Education and Democracy: Nation of Thinkers" width="640" height="418" />
+			<div class="slides">
+				<?php 
+				$directory = '/assets/images/slides-portfolio/';
+				$imgs = getFiles($directory, 'fed');
+				foreach($imgs as $i=>$img): 
+					$class = $i == 0 ? ' class="on"' : '';
+					echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+				endforeach; ?>
 			</div>
 			
 			<div class="details">
@@ -75,8 +87,14 @@
 			
 			<h2>Coke</h2>
 			
-			<div class="screenshot">
-				<img src="/assets/images/slides-portfolio/coke_1.jpg" alt="Coke" width="640" height="399" />
+			<div class="slides">
+				<?php 
+				$directory = '/assets/images/slides-portfolio/';
+				$imgs = getFiles($directory, 'coke');
+				foreach($imgs as $i=>$img): 
+					$class = $i == 0 ? ' class="on"' : '';
+					echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+				endforeach; ?>
 			</div>
 			<div class="details">
 				<dl>
@@ -101,8 +119,14 @@
 		
 			<h2>Advertising.com / AOL</h2>
 			
-			<div class="screenshot">
-				<img src="/assets/images/slides-portfolio/adcom_1.jpg" alt="Advertising.com" width="640" height="424" />
+			<div class="slides">
+				<?php 
+				$directory = '/assets/images/slides-portfolio/';
+				$imgs = getFiles($directory, 'adcom');
+				foreach($imgs as $i=>$img): 
+					$class = $i == 0 ? ' class="on"' : '';
+					echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+				endforeach; ?>
 			</div>
 			
 			<div class="details">
@@ -129,8 +153,14 @@
 			
 			<h2>The Government of Canada</h2>
 			
-			<div class="screenshot">
-				<img src="/assets/images/slides-portfolio/canada_1.jpg" alt="Canada Day Across America" width="640" height="493" />
+			<div class="slides">
+				<?php 
+				$directory = '/assets/images/slides-portfolio/';
+				$imgs = getFiles($directory, 'canada');
+				foreach($imgs as $i=>$img): 
+					$class = $i == 0 ? ' class="on"' : '';
+					echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+				endforeach; ?>
 			</div>
 			
 			<div class="details">
@@ -157,9 +187,16 @@
 			
 			<h2>Samsung</h2>
 			
-			<div class="screenshot">
-				<img src="/assets/images/slides-portfolio/samsung_1.jpg" alt="Samsung" width="640" height="424" />
+			<div class="slides">
+				<?php 
+				$directory = '/assets/images/slides-portfolio/';
+				$imgs = getFiles($directory, 'samsung');
+				foreach($imgs as $i=>$img): 
+					$class = $i == 0 ? ' class="on"' : '';
+					echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+				endforeach; ?>
 			</div>
+			
 			<div class="details">
 				<dl>
 					<dt>Agency</dt>
@@ -183,8 +220,14 @@
 		
 			<h2>Silk</h2>
 			
-			<div class="screenshot">
-				<img src="/assets/images/slides-portfolio/silk_1.jpg" alt="Silk" width="640" height="500" />
+			<div class="slides">
+				<?php 
+				$directory = '/assets/images/slides-portfolio/';
+				$imgs = getFiles($directory, 'silk');
+				foreach($imgs as $i=>$img): 
+					$class = $i == 0 ? ' class="on"' : '';
+					echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+				endforeach; ?>
 			</div>
 			
 			<div class="details">
@@ -209,7 +252,17 @@
 		
 		<div class="project">
 			<h2>TidalTV</h2>
-			<div class="screenshot"><img src="/assets/images/slides-portfolio/ttv_1.jpg" alt="TidalTV" width="640" height="427" /></div>
+			
+			<div class="slides">
+				<?php 
+				$directory = '/assets/images/slides-portfolio/';
+				$imgs = getFiles($directory, 'ttv');
+				foreach($imgs as $i=>$img): 
+					$class = $i == 0 ? ' class="on"' : '';
+					echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+				endforeach; ?>
+			</div>
+			
 			<div class="details">
 			<dl>
 			
@@ -233,8 +286,19 @@
 		
 		<div class="project">
 			<h2>Legal Momentum</h2>
+			
 			<h3>formerly the National Organization for Women Legal Defense Fund</h3>
-			<div class="screenshot"><img src="/assets/images/slides-portfolio/lm_1.jpg" alt="Legal Momentum" width="640" height="428" /></div>
+			
+			<div class="slides">
+				<?php 
+				$directory = '/assets/images/slides-portfolio/';
+				$imgs = getFiles($directory, 'lm');
+				foreach($imgs as $i=>$img): 
+					$class = $i == 0 ? ' class="on"' : '';
+					echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+				endforeach; ?>
+			</div>
+			
 			<div class="details">
 			
 			<dl>
@@ -259,7 +323,16 @@
 		
 		<div class="project">
 			<h2>Sylvan Learning Systems</h2>
-			<div class="screenshot"><img src="/assets/images/slides-portfolio/sylvan_1.jpg" alt="Sylvan Learning Systems" width="640" height="422" /></div>
+			
+			<div class="slides">
+				<?php 
+				$directory = '/assets/images/slides-portfolio/';
+				$imgs = getFiles($directory, 'sylvan');
+				foreach($imgs as $i=>$img): 
+					$class = $i == 0 ? ' class="on"' : '';
+					echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+				endforeach; ?>
+			</div>
 			
 			<div class="details">
 			<dl>
@@ -283,7 +356,17 @@
 		
 		<div class="project">
 			<h2>SNS Records</h2>
-			<div class="screenshot"><img src="/assets/images/slides-portfolio/sns_1.jpg" alt="SNS Records" width="640" height="424" style="padding: 0 0 25px 0;" /></div>
+			
+			<div class="slides">
+				<?php 
+				$directory = '/assets/images/slides-portfolio/';
+				$imgs = getFiles($directory, 'sns');
+				foreach($imgs as $i=>$img): 
+					$class = $i == 0 ? ' class="on"' : '';
+					echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+				endforeach; ?>
+			</div>
+			
 			<div class="details">
 			
 			<dl>

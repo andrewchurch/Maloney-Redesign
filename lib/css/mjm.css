@@ -322,13 +322,65 @@ h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidde
 #gre { background: url(../images/bg_gre.png) no-repeat 100% 50px; overflow: visible; }
 #present { background: url(../images/bg_present.png) no-repeat 100% 100px; overflow: visible; }
 
-div.project { padding: 0 0 0 20px; clear: left; }
-div.project h2 { display: block; padding: 0; }
-div.project h3 { display: block; padding: 0; }
-div.screenshot { float: left; width: 640px; padding: 25px 0 60px 0; }
-div.details { float: left; margin: 0 0 60px 25px; width: 250px; }
+div.project { overflow: hidden; padding: 0 0 55px 20px; zoom: 1; }
+div.project h2 { display: block; padding: 0; margin-bottom: 25px; }
+div.project h3 { display: block; padding: 0; position: relative; top: -15px; }
+.slides {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 640px;
+}
+.slides img.on {
+	display: block;
+}
+.slideWrapper {
+	position: relative;
+	width: 9999px;
+}
+.slideButton {
+	background: url(../images/slide-buttons.png);
+	display: none;
+	height: 40px;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999px;
+	top: 27px;
+	width: 75px;
+}
+.slideButton.next {
+	right: 0;
+}
+.slideButton.previous {
+	background-position: 0 -50px;
+	left: 0;
+}
+.slides img {
+	display: none;
+	float: left;
+	width: 640px;
+}
+.indicators {
+	float: left;
+	text-align: center;
+	margin: 5px 0 0 0;
+	width: 640px;
+}
+.indicator {
+	background: url(../images/indicators.png);
+	display: inline-block;
+	height: 7px;
+	margin: 0 5px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 7px;
+}
+.indicator.on {
+	background-position: 0 -7px;
+}
+div.details { margin: 0 20px 0 665px; }
 
-div.details dl { border-bottom: 1px solid #2D2C28; margin: -17px 0 0 0; padding: 30px 0 15px 0; }
+div.details dl { border-bottom: 1px solid #2D2C28; margin: -17px 0 0 0; padding: 5px 0 15px 0; }
 div.details dl dt { color: #FFFFFF; font-size: 10px; margin: 10px 0 0 0; text-transform: uppercase; }
 div.details dl dd { color: #0E9FCC; font-size: 14px; line-height: 20px; }
 div.details dl dd span { color: #5D5A4D; font: 11px; }

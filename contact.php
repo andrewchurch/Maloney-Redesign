@@ -102,7 +102,7 @@ if(isset($_POST['contactus'])) {
 				
 			<?php else: ?>
 				
-				<p style="margin: 25px;">Thanks <strong><?php echo $name ?></strong>, your message has been sent. I'll get right back to you. Promise!</p>
+				<p>Thanks <strong><?php echo $name ?></strong>, your message has been sent. I'll get right back to you. Promise!</p>
 
 			<?php endif; ?>
 						

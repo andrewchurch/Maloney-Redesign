@@ -17,9 +17,13 @@
 		<h1>I make digital experiences more valuable to their users.</h1> 
 		
 		<div id="screenshots">
-			<img src="/assets/images/slides-home/home_canada_1.jpg" width="770" height="578" alt="Canada Day Across America" />
-			<img src="/assets/images/slides-home/home_canada_1.jpg" width="770" height="578" alt="Canada Day Across America" style="display: none;" />
-			<img src="/assets/images/slides-home/home_canada_1.jpg" width="770" height="578" alt="Canada Day Across America" style="display: none;" />
+			<?php 
+			$directory = '/assets/images/slides-home/';
+			$imgs = getFiles($directory, 'home');
+			foreach($imgs as $i=>$img): 
+				$class = $i == 0 ? ' class="on"' : '';
+				echo '<img ' . $class . ' src="' . $directory . $img . '" alt="' . $img . '" />' . "\n";
+			endforeach; ?>
 		</div>
 
 		<div id="content"> 
@@ -41,18 +45,17 @@
 					// Last.FM
 					try {
 						$tracks = getLastFMTracks(LASTFM_KEY, 'baboonfarmer', 3);
-						if ($tracks) {
+						if ($tracks):
 							echo '<div id="lastfm"><h3>Last.FM</h3>';
-							foreach($tracks as $track) {
+							foreach($tracks as $track):
 								$art = (string) $track->image[1] ? $track->image[1] : '/assets/images/lastfm_default.jpg';
 								$time = $track['nowplaying'] ? 'now' : $track->date;
 								echo '<p><a href="' . $track->url . '" target="_blank"><img src="' . $art . '" alt="Last.FM Art">' . $track->name . ' <em class="artist">' . $track->artist . '</em></a> <span class="time">' . $time . '</span></p>';
 								echo "\n";
-							}
+							endforeach;
 							echo '</div>';
-						}
-					} catch(Exception $e) { } 
-					?>
+						endif;
+					} catch(Exception $e) { } ?>
 				</div>
 			</div>
 		

@@ -25,6 +25,7 @@ function getFiles($directory, $prefix = '') {
 			closedir($dh);
 		}
 	}
+	sort($files);
 	return $files;
 }
 

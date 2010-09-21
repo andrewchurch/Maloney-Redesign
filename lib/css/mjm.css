@@ -168,7 +168,7 @@ h1 span, h2 span, h3 span, h4 span, a span { visibility: hidden; overflow: hidde
 	overflow: hidden;
 }
 #pane {
-	width: 9999px;
+	width: 99999px;
 }
 #home #content { 
 	background: url(../images/about_bg.png) no-repeat;

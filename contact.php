@@ -6,7 +6,7 @@ if(isset($_POST['contactus'])) {
 	$email = $_POST['email'];
 	$subject = $_POST['subject'];
 	$comments = $_POST['comments'];
-	$verify = $_POST['verify'];
+	//$verify = $_POST['verify'];
 	
 	if(trim($name) == '') {
 		$error = '<div class="error_message">Attention! You must enter your name.</div>';
@@ -18,19 +18,20 @@ if(isset($_POST['contactus'])) {
 		$error = '<div class="error_message">Attention! Please enter a subject.</div>';
 	} else if(trim($comments) == '') {
 		$error = '<div class="error_message">Attention! Please enter your message.</div>';
-	} else if(trim($verify) == '') {
+	} 
+
+	/* else if(trim($verify) == '') {
 		$error = '<div class="error_message">Attention! Please enter the verification number.</div>';
 	} else if(trim($verify) != '4' && trim(strtolower($verify)) != 'four') {
 		$error = '<div class="error_message">Attention! The verification number that you entered is incorrect.</div>';
-	}
+	} */
 
 	if($error == '') {
 		$sent = true;
 		if(get_magic_quotes_gpc()) {
 			$comments = stripslashes($comments);
 		}
-		$address = "andrewchurch@gmail.com";
-		//$address = "markjmaloney@gmail.com";
+		$address = "markjmaloney@gmail.com";
 		$e_subject = 'You\'ve been contacted by ' . $name . '.';
 		$e_body = "You have been contacted by $name with regards to $subject, their additional message is as follows.\r\n\n";
 		$e_content = "\"$comments\"\r\n\n";
@@ -89,10 +90,9 @@ if(isset($_POST['contactus'])) {
 					<label for=comments accesskey=C><span class="required">*</span> Your comments</label>
 					<textarea name="comments" cols="40" rows="3"  id="comments"><?php echo $comments ?></textarea>
 					
-					<br />
-					
+					<!--br />
 					<label for=verify accesskey=V><span class="required">*</span> Three + one =</label>
-					<input name="verify" type="text" id="verify" size="4" value="" />
+					<input name="verify" type="text" id="verify" size="4" value="" /-->
 					
 					<br />
 					
